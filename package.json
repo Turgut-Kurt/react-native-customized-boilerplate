@@ -1,0 +1,8 @@
+{
+  "name": "react-native-customized-boilerplate",
+  "version": "0.0.1",
+  "description": "React Native Customized Boilerplate",
+  "repository": "git@github.com:Turgut-Kurt/react-native-customized-boilerplate.git",
+  "author": "Turgut Kurt",
+  "license": "MIT"
+}
