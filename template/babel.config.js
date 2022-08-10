@@ -24,6 +24,10 @@ module.exports = {
             rootPathSuffix: 'src/config/index',
           },
           {
+            rootPathPrefix: '~hooks',
+            rootPathSuffix: 'src/hooks/index',
+          },
+          {
             rootPathPrefix: '~locales',
             rootPathSuffix: 'src/locales/index',
           },

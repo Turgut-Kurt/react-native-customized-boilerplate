@@ -4,11 +4,13 @@ import React, {useEffect, useState} from 'react';
 import HomeTabs from './HomeTabs';
 import {StyleSheet} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import i18next from 'i18next';
 import {loadingSelector} from '~/modules/auth/selector';
+import moment from 'moment';
 import {rootStack} from '~config';
 import useActions from '~/hooks/useActions';
 import {useSelector} from 'react-redux';
-
+moment.locale(i18next.language);
 const Stack = createNativeStackNavigator();
 function RootStack() {
   // const Actions = useActions();

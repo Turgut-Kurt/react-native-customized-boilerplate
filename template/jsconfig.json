@@ -17,6 +17,9 @@
             "~config": [
                 "./src/config/index"
             ],
+            "~hooks": [
+                "./src/hooks/index"
+            ],
             "~locales": [
                 "./src/locales/index"
             ],

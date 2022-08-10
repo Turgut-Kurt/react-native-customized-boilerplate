@@ -1,5 +1,6 @@
 import authReducer from './modules/auth/slice';
 import {combineReducers} from 'redux';
+import settingsReducer from './modules/settings/slice';
 
 /**
  * Root reducer
@@ -7,6 +8,7 @@ import {combineReducers} from 'redux';
  */
 const rootReducers = combineReducers({
   auth: authReducer,
+  settings: settingsReducer,
 });
 
 export default rootReducers;
