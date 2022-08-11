@@ -39,12 +39,6 @@ export const slice = createSlice({
     changeCats: state => {
       state.cats += 1;
     },
-    setUser: (state, action) => {
-      state.user = action.payload;
-    },
-    updateUsersSlice: (state, action) => {
-      state.users = action.payload;
-    },
   },
   extraReducers: builder => {
     builder.addCase(REHYDRATE, (state, action) => {
@@ -69,8 +63,6 @@ export const {
   incrementByAmount,
   changeDogs,
   changeCats,
-  setUser,
-  updateUsersSlice,
   changeLoading,
 } = slice.actions;
 
