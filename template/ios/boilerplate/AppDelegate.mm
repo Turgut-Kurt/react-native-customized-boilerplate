@@ -5,6 +5,8 @@
 #import <React/RCTRootView.h>
 
 #import <React/RCTAppSetupUtils.h>
+#import "RNSplashScreen.h" // here
+#import "boilerplate-Swift.h" // here, change project name to yours
 
 #if RCT_NEW_ARCH_ENABLED
 #import <React/CoreModulesPlugins.h>
@@ -53,10 +55,16 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
   }
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-  UIViewController *rootViewController = [UIViewController new];
-  rootViewController.view = rootView;
-  self.window.rootViewController = rootViewController;
-  [self.window makeKeyAndVisible];
+    UIViewController *rootViewController = [UIViewController new];
+    rootViewController.view = rootView;
+    self.window.rootViewController = rootViewController;
+    [self.window makeKeyAndVisible];
+    Dynamic *t = [Dynamic new];
+    UIView *animationView = (UIView *)[t createAnimationViewWithRootView:rootView lottieName:@"lottieloading"];
+    animationView.backgroundColor = [UIColor whiteColor];
+    [RNSplashScreen showLottieSplash:animationView inRootView:rootView];
+    AnimationView *animatedSplash = (AnimationView *) animationView;
+    [t playWithAnimationView:animatedSplash];
   return YES;
 }
 

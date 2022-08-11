@@ -1,24 +1,23 @@
+import {CustomText, colors} from '~/components';
+import React, {useState} from 'react';
 import {StyleSheet, TouchableOpacity, View} from 'react-native';
 
-import {colors, CustomText} from '~/components';
-import React, {useState} from 'react';
 import {changeLanguage} from 'i18next';
+import {langSelector} from '~/modules/settings/selector';
+import moment from 'moment';
 import useActions from '~/hooks/useActions';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {useSelector} from 'react-redux';
 import {useTranslation} from 'react-i18next';
-import moment from 'moment';
-import {langSelector} from '~/modules/settings/selector';
+
 const Tab1 = props => {
   const {Container} = styles;
   const lang = useSelector(langSelector);
-  console.log('lang: lang : ' + lang);
   const [langs, setLangs] = useState(lang);
   const insets = useSafeAreaInsets();
   const Actions = useActions();
   const {t} = useTranslation();
   const changeLang = () => {
-    console.log('changeLang: lang');
     changeLanguage(langs).catch();
     moment.locale(langs);
     Actions.changeLang(langs);

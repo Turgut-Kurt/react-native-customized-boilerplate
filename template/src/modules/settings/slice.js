@@ -15,7 +15,6 @@ export const slice = createSlice({
   },
   extraReducers: builder => {
     builder.addCase(REHYDRATE, (state, action) => {
-      console.log('state geri yükleniyor');
       if (action.payload && action.payload.settings) {
         // Restore only user and isLogin state
         const {settings} = action.payload;
