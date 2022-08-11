@@ -6,23 +6,10 @@ const initialState = {
   value: 0,
   dogs: 123,
   cats: 456,
-  user: [],
-  users: {
+  user: {
     nameSurname: 'Turgut Kurt',
     email: 'kurt.turgutt@gmail.com',
     phoneNumber: '5366336175',
-    address: 'Kurtuluş Mah. Şehit Pamir Cad.',
-    province: 'HATAY',
-    district: 'İskenderun',
-    iban: 'TR',
-    createdDate: '22 Mayıs 2020',
-    totalLikes: '455',
-    followers: '255',
-    following: '23',
-    isEmailVerification: false,
-    isPhoneVerification: true,
-    profileImageUrl:
-      'https://www.pinclipart.com/picdir/middle/541-5416602_dummy-profile-image-url-clipart.png',
   },
 };
 

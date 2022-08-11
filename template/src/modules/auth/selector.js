@@ -21,14 +21,9 @@ export const catsDataMemo = createSelector(
   },
 );
 export const usersSelector = createSelector(
-  state => state.auth.users,
+  state => state.auth.user,
   users => {
-    console.log('usersSelector has worked');
+    console.log('userSelector has worked');
     return users;
   },
 );
-
-export const userSelector = createSelector(auth,
-  data => {
-    return data.user;
-  });
