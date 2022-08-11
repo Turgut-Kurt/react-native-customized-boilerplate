@@ -12,6 +12,7 @@ const colors = {
   color9: '#3F3D56',
   color10: '#ACB8C2',
   color11: '#656F77',
+  color12: '#E7455F',
 };
 
 //export All objects
