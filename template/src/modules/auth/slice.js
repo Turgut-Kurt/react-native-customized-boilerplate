@@ -3,6 +3,7 @@ import {createSlice} from '@reduxjs/toolkit';
 
 const initialState = {
   loading: false,
+  isInitial: false,
   value: 0,
   dogs: 123,
   cats: 456,

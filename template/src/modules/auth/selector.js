@@ -11,6 +11,9 @@ export const dogsDataMemo = createSelector(state => state.auth.dogs, dogs => {
     console.log('DogsDataMemo has worked');
     return dogs;
 });
+export const initialSelector = createSelector(auth, data => {
+  return data.isInitial;
+});
 
 
 export const catsDataMemo = createSelector(

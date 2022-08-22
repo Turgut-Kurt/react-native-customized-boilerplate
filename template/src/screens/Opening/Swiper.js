@@ -1,41 +1,42 @@
 import {CustomButton, CustomText, colors, gs} from '~/components';
-import React, {createElement, createFactory} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import React, {createElement} from 'react';
+import {StyleSheet, View} from 'react-native';
 import {Swiper1, Swiper2, Swiper3} from '~/assets';
-import {calcHeight, calcWidth} from '~/utils';
+import {calcHeight, calcWidth, navigate} from '~/utils';
 
 import CompSwiper from 'react-native-swiper';
+import {rootStack} from '~/config';
+import useActions from '~/hooks/useActions';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {useTranslation} from 'react-i18next';
 
-let initialSlide = [
-  {
-    id: 1,
-    comp: Swiper1,
-    topText: 'Seyehat güzergahını seç',
-    bottomText: 'Hemen seyehat etmek istediğin güzergah bilgilerini seç',
-  },
-  {
-    id: 2,
-    comp: Swiper2,
-    topText: 'Yol arkadaşınızı bulun',
-    bottomText:
-      'Sizinle aynı ya da yakın güzergaha seyehat etmek isteyen yol arkadaşınızı bulun ve iletişime geçin',
-  },
-  {
-    id: 3,
-    comp: Swiper3,
-    topText: 'Seyehatize başlayın',
-    bottomText: 'Yol arkadaşınızla buluşup seyehatinizi tamamlayın',
-  },
-];
 const Swiper = props => {
   const insets = useSafeAreaInsets();
   const {Container} = styles;
+  const Actions = useActions();
+  const {t} = useTranslation();
+  let initialSlide = [
+    {
+      id: 1,
+      comp: Swiper1,
+      topText: t('swiper1TopText'),
+      bottomText: t('swiper1BottomText'),
+    },
+    {
+      id: 2,
+      comp: Swiper2,
+      topText: t('swiper2TopText'),
+      bottomText: t('swiper2BottomText'),
+    },
+    {
+      id: 3,
+      comp: Swiper3,
+      topText: t('swiper3TopText'),
+      bottomText: t('swiper3BottomText'),
+    },
+  ];
   return (
     <View style={[styles.sliderContainer, {paddingTop: insets.top}]}>
-      {/* <CustomButton />
-      <CustomButton bordered />
-      <CustomButton withIcon /> */}
       <CompSwiper
         autoplay
         autoplayTimeout={6}
@@ -75,6 +76,15 @@ const Swiper = props => {
           </View>
         ))}
       </CompSwiper>
+      <CustomButton
+        children={t('startUsing')}
+        withIcon
+        name="arrow-right"
+        style={{...gs.posAbs, right: 30, bottom: 50 + insets.bottom}}
+        onPress={() => {
+          navigate(rootStack.main);
+        }}
+      />
     </View>
   );
 };

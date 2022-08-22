@@ -7,8 +7,22 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import React from 'react';
 
 const CustomButton = props => {
-  const {style, withIcon, bordered, ...rest} = props;
-  const {DefaultButtonStyle, BorderedButtonStyle, WithIconStyle} = styles;
+  const {
+    style,
+    children,
+    withIcon,
+    bordered,
+    soloIcon,
+    iconColor,
+    name,
+    ...rest
+  } = props;
+  const {
+    DefaultButtonStyle,
+    BorderedButtonStyle,
+    WithIconStyle,
+    SoloIconStyle,
+  } = styles;
   return (
     <TouchableOpacity
       style={StyleSheet.flatten([
@@ -16,15 +30,20 @@ const CustomButton = props => {
         StyleSheet.flatten([style]),
         bordered && StyleSheet.flatten(BorderedButtonStyle),
         withIcon && StyleSheet.flatten(WithIconStyle),
+        !!soloIcon && StyleSheet.flatten(SoloIconStyle),
       ])}
       {...rest}>
-      <CustomText
-        style={[{marginRight: 5}, !bordered && {color: colors.color7}]}
-      />
+      {!soloIcon && (
+        <CustomText
+          style={[{marginRight: 5}, !bordered && {color: colors.color7}]}
+          children={children}
+        />
+      )}
+
       {withIcon && (
         <MaterialCommunityIcons
-          name="arrow-right"
-          color={colors.color7}
+          name={name}
+          color={!!iconColor ? iconColor : colors.color7}
           size={sizes.f26}
         />
       )}
@@ -58,6 +77,11 @@ const styles = StyleSheet.create({
     ...gs.jccaic,
     width: 'auto',
     paddingHorizontal: 10,
+  },
+  SoloIconStyle: {
+    backgroundColor: colors.color7,
+    borderWidth: 2,
+    borderColor: colors.color9,
   },
 });
 

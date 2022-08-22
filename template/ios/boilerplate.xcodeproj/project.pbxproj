@@ -67,7 +67,7 @@
 		B8F65246D79B4C9ABC5A54A3 /* EncodeSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "EncodeSans-Light.ttf"; path = "../src/assets/fonts/EncodeSans-Light.ttf"; sourceTree = "<group>"; };
 		E0B6040228A4DF63007A2DD3 /* boilerplate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "boilerplate-Bridging-Header.h"; sourceTree = "<group>"; };
 		E0B6040328A4DF64007A2DD3 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
-		E0B6040928A4F68C007A2DD3 /* lottieloading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lottieloading.json; path = ../../../../Downloads/lottieloading.json; sourceTree = "<group>"; };
+		E0B6040928A4F68C007A2DD3 /* lottieloading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lottieloading.json; path = ../android/app/src/main/res/raw/lottieloading.json; sourceTree = "<group>"; };
 		E0B7210C2891E1C0001665C2 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
 		E0B7210D2891E1C0001665C2 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
 		E0B7210E2891E1C0001665C2 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
