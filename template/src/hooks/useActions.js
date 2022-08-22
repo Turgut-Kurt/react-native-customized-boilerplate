@@ -2,6 +2,7 @@ import {getUserAction, updateUser} from '~/modules/auth/actions';
 
 import {bindActionCreators} from 'redux';
 import {changeLang} from '~/modules/settings/slice';
+import {setInitial} from '~/modules/auth/slice';
 import {useDispatch} from 'react-redux';
 
 const useActions = () => {
@@ -12,6 +13,7 @@ const useActions = () => {
       getUserAction,
       updateUser,
       changeLang,
+      setInitial,
     },
     dispatch,
   );

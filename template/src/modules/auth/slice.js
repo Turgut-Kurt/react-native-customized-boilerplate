@@ -28,6 +28,9 @@ export const slice = createSlice({
     decrement: state => {
       state.value -= 1;
     },
+    setInitial: state => {
+      state.isInitial = true;
+    },
     changeLoading: state => {
       state.loading = !state.loading;
     },
@@ -49,6 +52,7 @@ export const slice = createSlice({
         return {
           ...initialState,
           dogs: auth.dogs,
+          isInitial: auth.isInitial,
         };
       } else {
         return state;
@@ -65,6 +69,7 @@ export const {
   changeDogs,
   changeCats,
   changeLoading,
+  setInitial,
 } = slice.actions;
 
 export default slice.reducer;

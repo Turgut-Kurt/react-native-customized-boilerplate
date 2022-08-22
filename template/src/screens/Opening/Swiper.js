@@ -82,6 +82,7 @@ const Swiper = props => {
         name="arrow-right"
         style={{...gs.posAbs, right: 30, bottom: 50 + insets.bottom}}
         onPress={() => {
+          // Actions.setInitial();
           navigate(rootStack.main);
         }}
       />
