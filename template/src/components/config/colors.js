@@ -12,7 +12,14 @@ const colors = {
   color9: '#3F3D56',
   color10: '#ACB8C2',
   color11: '#656F77',
-  color12: '#E7455F',
+  color12: '#FF0000',
+  color13: 'rgba(101, 111, 119, 0.5)',
+  color14: 'rgba(101, 111, 119, 1)',
+  color15: '#E6E6E6',
+  color16: '#F3F3F3',
+  color17: '#FAFAFA',
+  color18: '#EEEDFE',
+  color19: '#1DEF4B',
 };
 
 //export All objects

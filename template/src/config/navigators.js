@@ -3,6 +3,9 @@ const rootStack = {
   main: 'HomeTabs',
   loading: 'Loading',
   swiper: 'Swiper',
+  authInitial: 'AuthInitial',
+  login: 'Login',
+  register: 'Register',
 };
 // rootStack completed!
 

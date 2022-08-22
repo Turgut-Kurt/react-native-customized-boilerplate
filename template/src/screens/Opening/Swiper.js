@@ -83,7 +83,7 @@ const Swiper = props => {
         style={{...gs.posAbs, right: 30, bottom: 50 + insets.bottom}}
         onPress={() => {
           // Actions.setInitial();
-          navigate(rootStack.main);
+          navigate(rootStack.authInitial);
         }}
       />
     </View>

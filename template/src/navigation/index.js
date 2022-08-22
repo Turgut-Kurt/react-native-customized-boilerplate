@@ -1,4 +1,4 @@
-import {Loading, Swiper} from '~screens';
+import {AuthInitial, Loading, Login, Register, Swiper} from '~screens';
 import React, {useEffect, useState} from 'react';
 import {initialSelector, loadingSelector} from '~/modules/auth/selector';
 
@@ -37,6 +37,21 @@ function RootStack() {
         options={{headerShown: false}}
         name={rootStack.main}
         component={HomeTabs}
+      />
+      <Stack.Screen
+        options={{headerShown: false}}
+        name={rootStack.authInitial}
+        component={AuthInitial}
+      />
+      <Stack.Screen
+        options={{headerShown: false}}
+        name={rootStack.login}
+        component={Login}
+      />
+      <Stack.Screen
+        options={{headerShown: false}}
+        name={rootStack.register}
+        component={Register}
       />
     </Stack.Navigator>
   );
