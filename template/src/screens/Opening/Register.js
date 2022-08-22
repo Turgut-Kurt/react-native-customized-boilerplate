@@ -4,6 +4,7 @@ import {
   NameContent,
   PasswordContent,
   RegisterContent,
+  SavePhoneContent,
 } from '~/assets';
 import {
   CustomButton,
@@ -112,6 +113,21 @@ const Register = props => {
         }}>
         {({handleSubmit, values, isValid, errors}) => (
           <View style={Container}>
+            <CustomInputLabel
+              phone={true}
+              name={'phone'}
+              containerProps={{
+                label: t('registerText7'),
+                keyboardType: 'number-pad',
+                placeholder: 'Telefon',
+                maxLength: 11,
+                leftIcon: (
+                  <View style={{paddingLeft: 20}}>
+                    <SavePhoneContent />
+                  </View>
+                ),
+              }}
+            />
             <CustomInputLabel
               name={'name'}
               containerProps={{

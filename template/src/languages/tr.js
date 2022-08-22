@@ -24,6 +24,7 @@ export default {
     registerText4: 'Erkek',
     registerText5: 'Kadın',
     registerText6: 'Belirtmek istemiyorum',
+    registerText7: 'Telefon',
     gender: 'Cinsiyet',
     birthdaySelect: 'Doğum tarihi seç',
     verificationCodePhoneText1: `Telefon Doğrulama`,

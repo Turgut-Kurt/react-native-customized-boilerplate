@@ -14,6 +14,7 @@ export {default as BirthdayContent} from './svg/inputContent/BirthdayContent';
 export {default as SubjectContent} from './svg/inputContent/SubjectContent';
 export {default as InputMessageContent} from './svg/inputContent/InputMessageContent';
 export {default as IdentityContent} from './svg/inputContent/IdentityContent';
+export {default as SavePhoneContent} from './svg/inputContent/SavePhoneContent';
 export {default as EmailContent} from './svg/inputContent/EmailContent';
 export {default as PasswordContent} from './svg/inputContent/PasswordContent';
 export {default as BrandsContentSearch} from './svg/inputContent/BrandsContentSearch';

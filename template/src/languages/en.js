@@ -24,6 +24,7 @@ export default {
     registerText4: 'Male',
     registerText5: 'Woman',
     registerText6: 'I do not want to specify',
+    registerText7: 'Phone',
     gender: 'Gender',
     birthdaySelect: 'Choose date of birth',
     verificationCodePhoneText1: `Phone Verification`,
