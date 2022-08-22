@@ -6,3 +6,5 @@ export * from './AuthInitial';
 export * from './Login';
 // exports Register Screen
 export * from './Register';
+// exports VerificationCodePhone Screen
+export * from './VerificationCodePhone';

@@ -6,6 +6,7 @@ const rootStack = {
   authInitial: 'AuthInitial',
   login: 'Login',
   register: 'Register',
+  verificationCodePhone: 'VerificationCodePhone',
 };
 // rootStack completed!
 

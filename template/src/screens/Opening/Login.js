@@ -79,7 +79,7 @@ const Login = props => {
               containerProps={{
                 keyboardType: 'email-address',
                 label: t('emailText'),
-                placeholder: 'turgut@softcand.com',
+                placeholder: 'turgut@kurt.com',
                 maxLength: 25,
                 leftIcon: (
                   <View style={{paddingLeft: 20}}>
@@ -111,6 +111,9 @@ const Login = props => {
               ]}
               disabled={!(values.password !== '' && isValid === true)}
               children={t('login')}
+              onPress={() => {
+                navigate(rootStack.verificationCodePhone);
+              }}
             />
           </View>
         )}

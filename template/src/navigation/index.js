@@ -1,4 +1,11 @@
-import {AuthInitial, Loading, Login, Register, Swiper} from '~screens';
+import {
+  AuthInitial,
+  Loading,
+  Login,
+  Register,
+  Swiper,
+  VerificationCodePhone,
+} from '~screens';
 import React, {useEffect, useState} from 'react';
 import {initialSelector, loadingSelector} from '~/modules/auth/selector';
 
@@ -52,6 +59,11 @@ function RootStack() {
         options={{headerShown: false}}
         name={rootStack.register}
         component={Register}
+      />
+      <Stack.Screen
+        options={{headerShown: false}}
+        name={rootStack.verificationCodePhone}
+        component={VerificationCodePhone}
       />
     </Stack.Navigator>
   );

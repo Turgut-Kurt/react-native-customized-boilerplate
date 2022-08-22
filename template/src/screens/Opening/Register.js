@@ -130,7 +130,7 @@ const Register = props => {
               containerProps={{
                 keyboardType: 'email-address',
                 label: t('emailText'),
-                placeholder: 'Turgut@softcand.com',
+                placeholder: 'Turgut@kurt.com',
                 maxLength: 25,
                 leftIcon: (
                   <View style={{paddingLeft: 20}}>
@@ -139,19 +139,6 @@ const Register = props => {
                 ),
               }}
             />
-            {/* <CustomInputLabel
-              name={'birthday'}
-              containerProps={{
-                label: t('birthdayText'),
-                placeholder: '18.01.1993',
-                maxLength: 25,
-                leftIcon: (
-                  <View style={{paddingLeft: 20}}>
-                    <BirthdayContent />
-                  </View>
-                ),
-              }}
-            /> */}
             <CustomText
               f14
               style={{

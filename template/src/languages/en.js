@@ -26,5 +26,9 @@ export default {
     registerText6: 'I do not want to specify',
     gender: 'Gender',
     birthdaySelect: 'Choose date of birth',
+    verificationCodePhoneText1: `Phone Verification`,
+    verificationCodePhoneText2: `Verification Code`,
+    verificationCodePhoneText3: `Please enter the verification code sent to your phone.`,
+    verificationCodePhoneText4: `Resend code`,
   },
 };

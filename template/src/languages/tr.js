@@ -26,5 +26,9 @@ export default {
     registerText6: 'Belirtmek istemiyorum',
     gender: 'Cinsiyet',
     birthdaySelect: 'Doğum tarihi seç',
+    verificationCodePhoneText1: `Telefon Doğrulama`,
+    verificationCodePhoneText2: `Doğrulama Kodu`,
+    verificationCodePhoneText3: `Lütfen telefonunuza gelen doğrulama kodunu giriniz. `,
+    verificationCodePhoneText4: `Kodu tekrar gönder`,
   },
 };
